@@ -12,8 +12,7 @@ function staticContainer({}) {
 function pageProductSection({}) {
     return React.createElement("div", {className: "page-product-container"},
         React.createElement("div", {className: "page-product-images"},
-            React.createElement("img", {src: "/database/products/images/", alt: "Page Product Image", className: "product-image-small"}),
-            React.createElement("a", {className: "page-2", href: "/product"}, "Product")
+            React.createElement("img", {src: "/database/products/images/potato_set.webp", alt: "Page Product Image", className: "product-image-small"}),
         ),
         React.createElement("img",{src: "../icons/basket.svg", alt:"Basket Icon", className:"basket-icon"}) 
     )
