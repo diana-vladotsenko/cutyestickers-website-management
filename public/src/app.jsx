@@ -1,3 +1,7 @@
+import React from "react";
+import { createRoot } from "react-dom/client";
+
+
 
 function staticContainer({}) {
     return React.createElement("div", {className: "contact-basket-container", style: {marginLeft: "80px", marginRight: "80px"}},
@@ -14,7 +18,6 @@ function pageProductSection({}) {
         React.createElement("div", {className: "page-product-images"},
             React.createElement("img", {src: "/database/products/images/potato_set.webp", alt: "Page Product Image", className: "product-image-small"}),
         ),
-        React.createElement("img",{src: "../icons/basket.svg", alt:"Basket Icon", className:"basket-icon"}) 
     )
 }
 
@@ -28,5 +31,5 @@ const App = ()=>{
 }
 
 const container= document.getElementById("root");
-const root = ReactDOM.createRoot(container);
-root.render(React.createElement(App)); 
+const root = createRoot(container);
+root.render(React.createElement(<App/>)); 

@@ -12,7 +12,9 @@ app.get("/", (req, res) => {
 
 app.get("/product", (req, res) => {
 	res.render("product");
+	<script type="module" src="./src/App.js"></script>
 });
+
 
 console.log("Server is running on :http://localhost:5500")
 app.listen(5500);
