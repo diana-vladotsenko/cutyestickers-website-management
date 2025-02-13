@@ -1,20 +1,17 @@
-const express = require("express");
-const bodyparser = require("body-parser");
+import express from "express";
+const { static: serveStatic } = express;
 const app = express();
-app.set("view engine", "ejs");
-app.use(express.static("public"));
 
-app.use(bodyparser.urlencoded({extended:true}));
+app.set("view engine", "ejs");
+app.use(serveStatic("public"));
 
 app.get("/", (req, res) => {
-	res.render("index");
+    res.render("index");
 });
 
 app.get("/product", (req, res) => {
-	res.render("product");
-	<script type="module" src="./src/App.js"></script>
+    res.render("product");
 });
-
 
 console.log("Server is running on :http://localhost:5500")
 app.listen(5500);
