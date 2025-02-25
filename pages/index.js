@@ -1,4 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -7,20 +10,16 @@ export default function Home() {
         <title>CutyeStickers</title>
         <meta name="description" content="CutyeStickers" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/pink_logo.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <div>
         <div className="contact-basket-container">
           <p className="mail-container">
-            <a className="mail" href="mailto:cutyestickers@gmail.com">
+            <Link className="mail" href="mailto:cutyestickers@gmail.com">
               cutyestickers@gmail.com
-            </a>
+            </Link>
           </p>
           <i className="bi-basket">
             <img
@@ -33,31 +32,31 @@ export default function Home() {
 
         <header className="header">
           <div className="logo">
-            <a href="/" className="logo-link">
+            <Link href="/" className="logo-link">
               <img className="logo-img" src="/images/logo.jpg" alt="logo" />
               <p>CutyeStickers</p>
-            </a>
+            </Link>
           </div>
           <ul id="nav" className="nav">
             <li>
-              <a href="/" className="tapped-nav-link">
+              <Link href="/" className="tapped-nav-link">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/#products" className="nav-link">
+              <Link href="/#products" className="nav-link">
                 Products
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/#about" className="nav-link">
+              <Link href="/#about" className="nav-link">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/#contacts" className="nav-link">
+              <Link href="/#contacts" className="nav-link">
                 Contacts
-              </a>
+              </Link>
             </li>
           </ul>
         </header>
@@ -86,7 +85,7 @@ export default function Home() {
 
             <div className="introduction-buttons">
               <button id="see-products" className="button-see-products">
-                <a className="nav-link-button" href="/#products">
+                <Link className="nav-link-button" href="/#products">
                   See Products
                   <i className="bi-arrow-up-right"></i>
                   <img
@@ -94,15 +93,15 @@ export default function Home() {
                     alt="Arrow Up Right Icon"
                     className="bi-arrow-up-right"
                   />
-                </a>
+                </Link>
               </button>
-              <a
+              <Link
                 href="https://cutyestickers.etsy.com"
                 className="link-etsy-shop"
                 target="_blank"
               >
                 Visit Etsy Shop
-              </a>
+              </Link>
             </div>
           </div>
           <img
@@ -154,14 +153,17 @@ export default function Home() {
                   </div>
                   <div className="card-buttons">
                     <button id="add-to-card" className="button-add-to-card">
-                      <a className="nav-link-button" href="/">
+                      <Link className="nav-link-button" href="/">
                         Add To Card
-                      </a>
+                      </Link>
                     </button>
                     <button id="see-more" className="button-see-more">
-                      <a className="nav-link-see-more-button" href="/product">
+                      <Link
+                        className="nav-link-see-more-button"
+                        href="/product"
+                      >
                         See More
-                      </a>
+                      </Link>
                     </button>
                   </div>
                 </div>
@@ -187,14 +189,17 @@ export default function Home() {
                   </div>
                   <div className="card-buttons">
                     <button id="add-to-card" className="button-add-to-card">
-                      <a className="nav-link-button" href="/">
+                      <Link className="nav-link-button" href="/">
                         Add To Card
-                      </a>
+                      </Link>
                     </button>
                     <button id="see-more" className="button-see-more">
-                      <a className="nav-link-see-more-button" href="/product">
+                      <Link
+                        className="nav-link-see-more-button"
+                        href="/product"
+                      >
                         See More
-                      </a>
+                      </Link>
                     </button>
                   </div>
                 </div>
@@ -219,14 +224,17 @@ export default function Home() {
                   </div>
                   <div className="card-buttons">
                     <button id="add-to-card" className="button-add-to-card">
-                      <a className="nav-link-button" href="/">
+                      <Link className="nav-link-button" href="/">
                         Add To Card
-                      </a>
+                      </Link>
                     </button>
                     <button id="see-more" className="button-see-more">
-                      <a className="nav-link-see-more-button" href="/product">
+                      <Link
+                        className="nav-link-see-more-button"
+                        href="/product"
+                      >
                         See More
-                      </a>
+                      </Link>
                     </button>
                   </div>
                 </div>
@@ -251,14 +259,17 @@ export default function Home() {
                   </div>
                   <div className="card-buttons">
                     <button id="add-to-card" className="button-add-to-card">
-                      <a className="nav-link-button" href="/">
+                      <Link className="nav-link-button" href="/">
                         Add To Card
-                      </a>
+                      </Link>
                     </button>
                     <button id="see-more" className="button-see-more">
-                      <a className="nav-link-see-more-button" href="/product">
+                      <Link
+                        className="nav-link-see-more-button"
+                        href="/product"
+                      >
                         See More
-                      </a>
+                      </Link>
                     </button>
                   </div>
                 </div>
@@ -279,7 +290,7 @@ export default function Home() {
           <div className="about-container">
             <div className="paragraphs-container">
               <p style={{ fontWeight: 300 }} className="about-text">
-                Hi there! I'm Diana, a 22-year-old creative soul passionate
+                Hi there! I&apos;m Diana, a 22-year-old creative soul passionate
                 about design and all things cute. Welcome to my digital sticker
                 shop!
               </p>
@@ -291,7 +302,7 @@ export default function Home() {
                 day.
               </p>
               <p style={{ color: "#8B8B8B" }} className="about-text">
-                Whether you're looking to decorate your planner, style your
+                Whether you&apos;re looking to decorate your planner, style your
                 laptop, or make a gift extra special, my stickers are here to
                 help you express yourself in unique and fun ways. Thank you for
                 supporting my small business and being a part of my creative
@@ -319,10 +330,10 @@ export default function Home() {
 
         <div className="footer" id="contacts">
           <div className="logo">
-            <a href="/" className="logo-link">
+            <Link href="/" className="logo-link">
               <img className="logo-img" src="/images/logo.jpg" alt="logo" />
               <p>CutyeStickers</p>
-            </a>
+            </Link>
           </div>
           <div className="contact-section">
             <div className="contact-container">
@@ -332,7 +343,7 @@ export default function Home() {
                   E-S 12:00 AM - 20:00 PM (Estonian Time, UTC+2)
                 </p>
                 <div className="mail-footer">
-                  <a
+                  <Link
                     href="mailto:cutyestickers@gmail.com"
                     style={{
                       fontSize: "22px",
@@ -347,14 +358,14 @@ export default function Home() {
                       className="mail-icon"
                     />
                     cutyestickers@gmail.com
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="social-media-container">
               <p className="heading-info">Social Media</p>
               <div className="social-media-links">
-                <a
+                <Link
                   href="https://www.instagram.com/cutyestickers/?igsh=MWJqOXVvcXdiNWVkNA%3D%3D"
                   target="_blank"
                 >
@@ -363,8 +374,8 @@ export default function Home() {
                     alt="instagram"
                     className="social-media-icon"
                   />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="https://www.tiktok.com/@cutyestickers?lang=en&is_from_webapp=1&sender_device=mobile&sender_web_id=7441492660857013793"
                   target="_blank"
                 >
@@ -373,8 +384,8 @@ export default function Home() {
                     alt="tiktok"
                     className="social-media-icon"
                   />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="https://www.etsy.com/shop/cutyestickers/?etsrc=sdt"
                   target="_blank"
                 >
@@ -383,31 +394,31 @@ export default function Home() {
                     alt="etsy"
                     className="social-media-icon"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="information-container">
               <p className="heading-info">Information</p>
               <ul className="info-links">
                 <li>
-                  <a href="/" className="info-underlined-links">
+                  <Link href="/" className="info-underlined-links">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/#products" className="info-underlined-links">
+                  <Link href="/#products" className="info-underlined-links">
                     Products
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/#about" className="info-underlined-links">
+                  <Link href="/#about" className="info-underlined-links">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/#contacts" className="info-underlined-links">
+                  <Link href="/#contacts" className="info-underlined-links">
                     Contacts
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -415,17 +426,20 @@ export default function Home() {
               <p className="heading-info">Helpful Links</p>
               <ul className="info-links">
                 <li>
-                  <a href="/privacy_policy" className="info-underlined-links">
+                  <Link
+                    href="/privacy_policy"
+                    className="info-underlined-links"
+                  >
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/terms_and_cookies"
                     className="info-underlined-links"
                   >
                     Terms & Cookies
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
