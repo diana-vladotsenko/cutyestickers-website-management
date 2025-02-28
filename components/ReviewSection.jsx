@@ -32,8 +32,8 @@ const ReviewSection = ({ reviews }) => {
             </select>
           </div>
           <div className="card-buttons">
-            <button id="see-more" className="button-see-more">
-              <a className="nav-link-see-more-button" href="/addreview">
+            <button id="see-more" className="button-see-more" style={{marginRight:"33px"}}>
+              <a className="nav-link-see-more-button" href="/example.com">
                 Add Review
               </a>
             </button>
