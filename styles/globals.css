@@ -590,7 +590,7 @@ li{
   display: block;
   flex-direction: column;
   margin-right: 160px;
-  margin-left: 18px;
+  margin-left: 40px;
   justify-content: space-between;
   flex:1;
 }
