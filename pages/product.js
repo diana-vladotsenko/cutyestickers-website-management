@@ -1,8 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
-import Head from "next/head";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 export default function Product() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch("../api/data.json") // Make sure it's inside the "public" folder
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
+
   return (
     <div className="a">
       <div
@@ -13,6 +21,7 @@ export default function Product() {
           <Link className="page-1" href="/">
             Home/
           </Link>
+          {/* need to add style here */}
           <Link className="page-2" href="/product">
             Product
           </Link>
@@ -37,10 +46,14 @@ export default function Product() {
         </div>
         <div className="product-image-description">
           <div className="product-name-price">
-            <p className="h2" style={{ fontWeight: "500" }}>
+            <p className="h2" style={{ fontWeight: "500" }} id="NameOfProduct">
               Name Of Set
             </p>
-            <p className="h2" style={{ fontWeight: "500", fontSize: "40px" }}>
+            <p
+              className="h2"
+              style={{ fontWeight: "500", fontSize: "40px" }}
+              id="price"
+            >
               Price€
             </p>
           </div>
@@ -95,9 +108,12 @@ export default function Product() {
             </p>
           </div>
 
-          <div className="product-description-container">
-            <p id="product-description" className="product-description">
-              Description..
+          <div
+            id="productPageDescription"
+            className="product-description-container"
+          >
+            <p className="product-description">
+              {product.description}
             </p>
           </div>
           <div className="button-container">
@@ -108,3 +124,5 @@ export default function Product() {
     </div>
   );
 }
+
+

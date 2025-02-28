@@ -488,7 +488,6 @@ li{
 }
 .link-etsy-shop:hover{
   color: #711BE0;
-  text-underline: #711BE0;
   text-decoration: underline;
 }
 .button-add-to-card:hover{
@@ -576,6 +575,7 @@ li{
   align-items: flex-start;
   justify-content: space-between;
   margin-top: 30px;
+  
 }
 .product-image-small{
   display: flex;

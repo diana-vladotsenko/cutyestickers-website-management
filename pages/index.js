@@ -197,6 +197,7 @@ export default function Home() {
                       <Link
                         className="nav-link-see-more-button"
                         href="/product"
+                        onclick="addDataFromJson"
                       >
                         See More
                       </Link>
@@ -452,3 +453,15 @@ export default function Home() {
     </>
   );
 }
+
+// function generativePage() {
+//   const nameOfProduct = document.getElementById("NameOfProduct");
+//   const price = document.getElementById("price");
+//   const description = document.getElementById("productDescription");
+
+//   jsonData = JSON.parse(data);
+//   for (let i = 0; i < jsonData.length; i++) {
+//     console.log(jsonData[i]);
+//   }
+//
+
