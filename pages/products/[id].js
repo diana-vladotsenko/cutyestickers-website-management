@@ -1,15 +1,31 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import data from "../../src/data.json";
 
 export default function Product() {
-  const [products, setProducts] = useState([]);
+  //We'll use useRouter() to grab the product ID dynamically.
+  const router = useRouter();
+  const { id } = router.query;
+  const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch("../api/data.json") // Make sure it's inside the "public" folder
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  }, []);
+    console.log("Router Query:", router.query); // Debugging
+    if (id) {
+      console.log("Product ID from URL:", id);
+      const foundProduct = data.find((item) => item.id === parseInt(id));
+      if (foundProduct) {
+        setProduct(foundProduct);
+      } else {
+        console.error("Product not found for ID:", id);
+      }
+    }
+  }, [id]);
+
+  if (!product) {
+    return <h2>Loading product..</h2>;
+  }
 
   return (
     <div className="a">
@@ -35,26 +51,40 @@ export default function Product() {
         </i>
       </div>
 
+      {/* product generative page with json */}
       <div className="page-product-container">
         <div className="page-product-images">
-          <img src="" alt="Example-Big" className="product-image-big" />
+          <img
+            src={product["image-1"]}
+            alt={product.name}
+            className="product-image-big"
+          />
+
           <div className="product-image-small-container">
-            <img src="" alt="Example-Small" className="product-image-small" />
-            <img src="" alt="Example-Small" className="product-image-small" />
-            <img src="" alt="Example-Small" className="product-image-small" />
+            <img
+              src={product["image-2"]}
+              alt={product.name}
+              className="product-image-small"
+            />
+            <img
+              src={product["image-3"]}
+              alt={product.name}
+              className="product-image-small"
+            />
+            <img
+              src={product["image-4"]}
+              alt={product.name}
+              className="product-image-small"
+            />
           </div>
         </div>
         <div className="product-image-description">
           <div className="product-name-price">
-            <p className="h2" style={{ fontWeight: "500" }} id="NameOfProduct">
-              Name Of Set
+            <p className="h2" style={{ fontWeight: "500" }}>
+              {product.name}
             </p>
-            <p
-              className="h2"
-              style={{ fontWeight: "500", fontSize: "40px" }}
-              id="price"
-            >
-              Price€
+            <p className="h2" style={{ fontWeight: "500", fontSize: "40px" }}>
+              {product.price}
             </p>
           </div>
           <div className="star-reviews-container">
@@ -108,21 +138,25 @@ export default function Product() {
             </p>
           </div>
 
-          <div
-            id="productPageDescription"
-            className="product-description-container"
-          >
+          <div className="product-description-container">
             <p className="product-description">
-              {product.description}
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: product.description.replace(/\n/g, "<br/>"),
+                }}
+              />
             </p>
           </div>
           <div className="button-container">
             <button className="add-to-card-big">Add To Card</button>
           </div>
+
+          {/*  */}
         </div>
       </div>
     </div>
+
+
+
   );
 }
-
-

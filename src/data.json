@@ -1,0 +1,41 @@
+[{
+  "id":1,
+  "name":"Potato-Christmas Set",
+  "price": 0.99,
+  "description":"✨ Cute Christmas Potato Stickers - Digital Download ✨ \nBring festive cheer to your projects with these adorable Christmas Potato Stickers! Perfect for digital planners, scrapbooking, and creative designs, these cute little potatoes come dressed in charming Christmas outfits and accessories. \n\n✨ What’s included: ✨\nYou will receive a ZIP file containing 7 high-quality PNG files with transparent backgrounds\n\n✨ Features: ✨\n• High-resolution (300 DPI)\n• Transparent backgrounds for easy use\n• Digital files – instant download (no physical product)",
+  "image-1":"/images/potato_set.webp",
+  "image-2":"/images/potato_set.webp",
+  "image-3":"/images/potato_set.webp",
+  "image-4":"/images/potato_set.webp"
+},
+{
+  "id":2,
+  "name":"Coffee Set",
+  "price": 0.99,
+  "description":"☕️ Cute Coffee Vibe Stickers - Digital Download ☕️ \n Add a touch of festive warmth to your projects with these charming coffee-themed stickers! Perfect for digital planners and creative designs, they bring the cozy vibe of your favourite brew to life. \n✨ What’s included: ✨\nYou will receive a ZIP file containing 7 high-quality PNG files with transparent backgrounds\n\n✨ Features: ✨\n• High-resolution (300 DPI)\n• Transparent backgrounds for easy use\n• Digital files – instant download (no physical product)",
+  "image-1":"/images/coffee_set.jpg",
+  "image-2":"/images/coffee_set.jpg",
+  "image-3":"/images/coffee_set.jpg",
+  "image-4":"/images/coffee_set.jpg"
+},
+{
+  "id":3,
+  "name":"Octopus",
+  "price": 0.20,
+  "description":"Quirky Cute Octopus With Mustache Minimalistic Kawaii Ocean Humorous Funny Digital Sticker Design PNG For Decorations And Personal Use \n\n✨ What’s included: ✨\nYou will receive a ZIP file containing 1 high-quality PNG file with transparent background\n\n✨ Features: ✨\n• High-resolution (300 DPI)\n• Transparent backgrounds for easy use\n• Digital files – instant download (no physical product)",
+  "image-1":"/images/octopus.avif",
+  "image-2":"/images/octopus.avif",
+  "image-3":"/images/octopus.avif",
+  "image-4":"/images/octopus.avif"
+},
+{
+  "id":4,
+  "name":"Self Care Set",
+  "price": 2.99,
+"description": "✨ Cute Girlie Self-Care Handmade Digital Sticker Pack ✨\n\n💕🎀 Self-Care Sticker Pack - Digital Download 🎀💕\n\nA charming collection of handmade pink-themed stickers celebrating self-love, mindfulness, and positivity. Featuring heartwarming phrases like  Self-Care Day, I Can Do It, It Will Heal. Alongside cute illustrations of candles, hearts, and accessories. Perfect for planners, journaling, or adding a touch of motivation to your everyday items! 💖\n\n📦What’s Included:\n✔️ 7 High-Quality PNG Files (Transparent Backgrounds) \n\n🌟 Features:\n✔️ High-resolution (300 DPI)\n✔️ Transparent backgrounds for easy use\n✔️ Instant digital download (No physical product)",
+
+  "image-1":"/images/selfcare.jpg",
+  "image-2":"/images/selfcare.jpg",
+  "image-3":"/images/selfcare.jpg",
+  "image-4":"/images/selfcare.jpg"
+}]

@@ -1,9 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
+
+import data from "../src/data.json"; 
 
 export default function Home() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    setProducts(data); // Load data into state
+  }, []);
+
   return (
     <>
       <Head>
@@ -160,7 +168,7 @@ export default function Home() {
                     <button id="see-more" className="button-see-more">
                       <Link
                         className="nav-link-see-more-button"
-                        href="/product"
+                        href="/products/1"
                       >
                         See More
                       </Link>
@@ -196,8 +204,7 @@ export default function Home() {
                     <button id="see-more" className="button-see-more">
                       <Link
                         className="nav-link-see-more-button"
-                        href="/product"
-                        onclick="addDataFromJson"
+                        href="/products/2"
                       >
                         See More
                       </Link>
@@ -232,7 +239,7 @@ export default function Home() {
                     <button id="see-more" className="button-see-more">
                       <Link
                         className="nav-link-see-more-button"
-                        href="/product"
+                        href="/products/3"
                       >
                         See More
                       </Link>
@@ -267,7 +274,7 @@ export default function Home() {
                     <button id="see-more" className="button-see-more">
                       <Link
                         className="nav-link-see-more-button"
-                        href="/product"
+                        href="/products/4"
                       >
                         See More
                       </Link>
@@ -278,7 +285,7 @@ export default function Home() {
             </div>
           </div>
           <div className="products-line-2">
-            <p style={{ textAlign: "center" }} className="undertext">
+            <p style={{ textAlign: "center", marginTop:"40px"}} className="undertext">
               There would be more products...
             </p>
           </div>
@@ -464,4 +471,3 @@ export default function Home() {
 //     console.log(jsonData[i]);
 //   }
 //
-
