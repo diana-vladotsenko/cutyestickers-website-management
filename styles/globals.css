@@ -682,3 +682,25 @@ li{
 .user-text-title{
   display:block;
 }
+
+
+/* privacy policy */
+.privacy-policy{
+  display:block;
+  margin-left:80px;
+  margin-right:80px;
+  margin-top:45px;
+}
+.privacy-terms-container{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+}
+.link{
+  color:black;
+}
+.link:hover{
+  color:#BDBDBD;
+}
+
