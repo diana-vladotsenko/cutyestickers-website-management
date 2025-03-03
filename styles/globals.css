@@ -691,16 +691,22 @@ li{
   margin-right:80px;
   margin-top:45px;
 }
+.navigation-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
 .privacy-terms-container{
   display:flex;
   flex-direction:row;
   align-items:center;
   justify-content:center;
+  flex:1;
 }
 .link{
   color:black;
 }
 .link:hover{
-  color:#BDBDBD;
+  color:#711BE0;
 }
 

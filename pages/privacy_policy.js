@@ -1,15 +1,7 @@
-import { useEffect, useState } from "react";
 import Head from "next/head";
-import data from "../src/data.json";
 import Link from "next/link";
 
-export default function Home() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    setProducts(data);
-  }, []);
-
+export default function privacyPolicy() {
   return (
     <>
       <Head>
@@ -17,6 +9,17 @@ export default function Home() {
       </Head>
       <div class="privacy-policy">
         <div className="navigation-container">
+          <Link
+            href="/"
+            style={{
+              marginRight: "auto",
+              color: "646464",
+              textDecoration: "none",
+              fontSize: "18px",
+            }}
+          >
+            Go Home
+          </Link>
           <div className="privacy-terms-container">
             <Link
               className="link"
@@ -48,13 +51,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <div className = "navigation-container"></div>
-      <Link className="page-1" href="/" style={{color:"646464",textDecoration:"none",fontSize:"22px",marginLeft:"80px",marginRight:"80px"}}>
-            Go Back
-      </Link>
-      <Link className="page-1" href="/" style={{color:"#646464",textDecoration:"none",fontSize:"22px",marginLeft:"80px",marginRight:"80px"}}>
-            Go To Terms&Cookies
-      </Link> */}
         <h2>Privacy Policy</h2>
         <hr />
         <p>
