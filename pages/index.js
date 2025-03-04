@@ -9,7 +9,7 @@ import AboutSection from "../components/AboutSection";
 import Footer from "../components/Footer";
 
 export default function Home() {
-  const [products, setProducts] = useState([]);
+  const [product, setProducts] = useState(true);
 
   useEffect(() => {
     setProducts(data);
