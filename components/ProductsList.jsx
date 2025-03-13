@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React from "react";
+import SnipcartLoader from "./SnipcartLoader";
+
 
 const ProductsList = ({ products }) => {
   return (
@@ -36,10 +38,15 @@ const ProductsList = ({ products }) => {
                   </div>
                   <div className="card-buttons">
                     <button id="add-to-card" className="button-add-to-card">
-                      <Link className="nav-link-button" href="/">
+                      <button className="snipcart-add-item" 
+                        data-item-id="1"
+                        data-item-price="19.99"
+                        data-item-name="Product Name"
+                        data-item-url="/product/1">
                         Add To Card
-                      </Link>
+                      </button>
                     </button>
+                    <SnipcartLoader/>
                     <button id="see-more" className="button-see-more">
                       <Link
                         className="nav-link-see-more-button"

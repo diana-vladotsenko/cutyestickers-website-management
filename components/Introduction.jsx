@@ -8,7 +8,7 @@ const Introduction = () => {
           <div className="heading-text">
             <h1 className="h1">
               <strong>Handmade Digital Stickers</strong>
-              <span style={{ fontWeight: "normal" }}> Shop for</span>
+              <span style={{ fontWeight: "normal" }}> Shop for </span>
               <span
                 style={{
                   textDecoration: "underline",
