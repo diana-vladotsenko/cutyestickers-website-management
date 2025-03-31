@@ -8,7 +8,7 @@ const SnipcartLoader = () => {
 
     // Snipcart settings
     window.SnipcartSettings = {
-      publicApiKey: "YOUR_API_KEY",
+      publicApiKey: "OTJiM2Q1NGUtNTRhNS00ZDVlLWEzMTMtYmNkYTYwOGE1OGNiNjM4NzkwMjcyNjU0MTMzMjQ4",
       loadStrategy: "on-user-interaction",
       version: "3.0",
       timeoutDuration: 2750,

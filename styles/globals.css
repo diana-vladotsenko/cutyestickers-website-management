@@ -272,6 +272,8 @@ html{
   align-items: center;
   justify-content: center;
   flex:1;
+  font-size:20px;
+  color:white;
 }
 .button-see-more{
   border:none;
