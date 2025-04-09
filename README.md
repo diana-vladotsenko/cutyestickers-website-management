@@ -4,6 +4,6 @@ CutyeStickers is a personal website project built for showcasing and selling cut
 [Prototype in figma](https://www.figma.com/proto/y9m5NYYKt7QsgbwXNmCG4v/Untitled?node-id=1-2&t=m2ZpDG5IEPRTmICA-1)
 
 # 🛠️ Tech Stack
-Frontend: HTML, CSS, JavaScript, React
-Data Management: JSON
-Styling: plain CSS
+- **Frontend:** HTML, CSS, JavaScript, React 
+- **Data Management:** JSON
+- **Styling:** plain CSS
